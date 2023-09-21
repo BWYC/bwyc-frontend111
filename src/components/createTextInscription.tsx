@@ -115,7 +115,7 @@ const CreateTextInscription = ({ network, capabilities }: Props) => {
         style={{
           padding: "10px",
           color: "orange",
-          width: "50%",
+          width: "100%",
         }}
       >
         Service FEE: 0.0 ₿TC
