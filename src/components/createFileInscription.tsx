@@ -50,6 +50,7 @@ const CreateBinaryInscription = ({ network, capabilities }: Props) => {
       }
 
       const base64String = contentString.split(",")[1];
+
       setContent(base64String);
     };
     reader.readAsDataURL(selectedFile);
@@ -108,7 +109,6 @@ const CreateBinaryInscription = ({ network, capabilities }: Props) => {
         <p>
           <b>Content</b>
           <br />
-          {content}
           <br />
           <input
             type="file"
@@ -118,25 +118,27 @@ const CreateBinaryInscription = ({ network, capabilities }: Props) => {
               border: "solid",
               padding: "20px",
               borderRadius: "8px",
-              width: "100%",
+              width: "80%",
             }}
           />
         </p>
-        <button
-          style={{
-            background: "black",
-            padding: "10px",
-            border: "solid",
-            color: "white",
-            borderRadius: "8px",
-            overflowWrap: "break-word",
-            margin: "10px",
-          }}
-          onClick={onCreateClick}
-        >
-          Create inscription
-        </button>
       </div>
+      <button
+        style={{
+          background: "black",
+          padding: "10px",
+          border: "solid",
+          color: "white",
+          borderRadius: "8px",
+          overflowWrap: "break-word",
+          margin: "10px",
+          width: "200px",
+          overflow: "hidden",
+        }}
+        onClick={onCreateClick}
+      >
+        Create inscription
+      </button>
     </div>
   );
 };
