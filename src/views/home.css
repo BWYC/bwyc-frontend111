@@ -243,7 +243,11 @@
   padding-left: var(--dl-space-space-oneandhalfunits);
   padding-right: var(--dl-space-space-oneandhalfunits);
   flex-direction: column;
-  background-color: #000000;
+  background-image: radial-gradient(
+    circle at center,
+    rgba(113, 57, 0, 0.992) 0%,
+    rgba(0, 0, 0, 0.902) 42%
+  );
 }
 .home-header {
   gap: var(--dl-space-space-twounits);

@@ -268,13 +268,6 @@ function App1() {
           network={network}
           capabilities={capabilities!}
         />
-        <hr style={{ height: "1px", background: "white" }} />
-        <SignMessage
-          address={ordinalsAddress}
-          network={network}
-          capabilities={capabilities!}
-        />
-        <hr style={{ height: "1px", background: "white" }} />
       </div>
       <div style={{ marginLeft: "30%" }}>
         <h3 style={{ color: "white" }}>Disconnect wallet</h3>
@@ -294,6 +287,7 @@ function App1() {
           Disconnect
         </button>
       </div>
+      <hr style={{ height: "1px", background: "white" }} />
     </div>
   );
 }
