@@ -49,10 +49,12 @@ const SignMessage = ({ network, address, capabilities }: Props) => {
         flexDirection: "column",
         alignContent: "center",
         marginLeft: "20%",
+        fontFamily: "monospace",
+        gap: "10px",
       }}
     >
       <h3>Sign message</h3>
-      <p>
+      <p style={{ color: "orange", overflow: "scroll" }}>
         <b>Address</b>
         <br />
         {address}
@@ -64,7 +66,7 @@ const SignMessage = ({ network, address, capabilities }: Props) => {
           background: "transparent",
           padding: "10px",
           border: "solid",
-          color: "white",
+          color: "lightgreen",
           borderRadius: "8px",
           margin: "10px",
           width: "50%",

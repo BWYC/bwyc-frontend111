@@ -11,35 +11,8 @@ const CreateTextInscription = ({ network, capabilities }: Props) => {
   const [suggestedMinerFeeRate, setSuggestedMinerFeeRate] = useState<number>(8);
 
   const [content, setContent] = useState<string>(
-    `<html>
-    <body
-      style="
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-      "
-    >
-      <p>Hello World!</p>
-      <p>I am recursive!!</p>
-      <img
-        src="/content/6fb976ab49dcec017f1e201e84395983204ae1a7c2abf7ced0a85d692e442799i0"
-      />
-      <div id="content">Fetching current block height...</div>
-      <script>
-        const fetchBlockheight = () =>
-          fetch("/blockheight")
-            .then((response) => response.text())
-            .then((data) => {
-              document.getElementById("content").textContent =
-                "Current block height: " + data;
-            })
-            .catch(console.error);
-        setTimeout(fetchBlockheight, 2000);
-      </script>
-    </body>
-  </html>
+    `
+    Cross-Chain NFT Community on EVM and BITCOIN as Ordinals. Members have access to Whaleverse. Mint Whalecards or #Whale NFT on Youngparrot to join the club. 
 `,
   );
   const [contentType, setContentType] = useState<string>("text/html");
@@ -74,10 +47,11 @@ const CreateTextInscription = ({ network, capabilities }: Props) => {
       <div
         style={{
           padding: "40px",
-          color: "white",
+          color: "grey",
           display: "flex",
           flexDirection: "column",
           alignContent: "center",
+          fontFamily: "monospace",
         }}
       >
         <h3>Create text inscription</h3>
@@ -89,7 +63,18 @@ const CreateTextInscription = ({ network, capabilities }: Props) => {
   if (!capabilities.has("createInscription")) {
     return (
       <div>
-        <h3>Create file inscription</h3>
+        <h3
+          style={{
+            padding: "40px",
+            color: "grey",
+            display: "flex",
+            flexDirection: "column",
+            alignContent: "center",
+            fontFamily: "monospace",
+          }}
+        >
+          Create file inscription
+        </h3>
         <b>The wallet does not support this feature</b>
       </div>
     );
@@ -104,12 +89,13 @@ const CreateTextInscription = ({ network, capabilities }: Props) => {
         flexDirection: "column",
         alignContent: "center",
         marginLeft: "20%",
+        fontFamily: "monospace",
       }}
     >
       <h3
         style={{
           padding: "10px",
-          color: "white",
+          color: "lightcoral",
         }}
       >
         Create Text inscription
@@ -119,6 +105,7 @@ const CreateTextInscription = ({ network, capabilities }: Props) => {
           padding: "10px",
           color: "white",
           width: "50%",
+          fontFamily: "monospace",
         }}
       >
         Creates an inscription with the desired text and content type. The
@@ -127,7 +114,7 @@ const CreateTextInscription = ({ network, capabilities }: Props) => {
       <p
         style={{
           padding: "10px",
-          color: "white",
+          color: "orange",
           width: "50%",
         }}
       >
@@ -138,7 +125,7 @@ const CreateTextInscription = ({ network, capabilities }: Props) => {
           <b
             style={{
               padding: "10px",
-              color: "white",
+              color: "gray",
               width: "50%",
             }}
           >
@@ -150,7 +137,7 @@ const CreateTextInscription = ({ network, capabilities }: Props) => {
               background: "transparent",
               padding: "10px",
               border: "solid",
-              color: "white",
+              color: "gray",
               borderRadius: "8px",
               margin: "10px",
             }}
@@ -162,7 +149,7 @@ const CreateTextInscription = ({ network, capabilities }: Props) => {
           <b
             style={{
               padding: "10px",
-              color: "white",
+              color: "gray",
               width: "50%",
             }}
           >
@@ -174,9 +161,11 @@ const CreateTextInscription = ({ network, capabilities }: Props) => {
               background: "transparent",
               padding: "10px",
               border: "solid",
-              color: "white",
+              color: "gray",
               borderRadius: "8px",
               margin: "10px",
+              width: "300px",
+              height: "200px",
             }}
             value={content}
             onChange={(e) => setContent(e.target.value)}
@@ -186,7 +175,7 @@ const CreateTextInscription = ({ network, capabilities }: Props) => {
           <b
             style={{
               padding: "10px",
-              color: "white",
+              color: "yellow",
               width: "50%",
             }}
           >

@@ -44,6 +44,7 @@ const SendBitcoin = ({ network, address, capabilities }: Props) => {
           flexDirection: "column",
           alignContent: "center",
           marginLeft: "20%",
+          fontFamily: "monospace",
         }}
       >
         <h3>Send Bitcoin</h3>
@@ -64,7 +65,7 @@ const SendBitcoin = ({ network, address, capabilities }: Props) => {
 
   return (
     <div className="container">
-      <h3>Send Bitcoin</h3>
+      <h3>Send Test Bitcoin</h3>
       <p>
         <b>From address</b>
         <br />
