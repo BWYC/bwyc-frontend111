@@ -10,6 +10,7 @@ import { useLocalStorage } from "./useLocalStorage";
 
 import { useEffect, useState } from "react";
 import CreateTextInscription from "./components/createTextInscription";
+import CreateBinaryInscription from "./components/createFileInscription";
 
 import SendBitcoin from "./components/sendBitcoin";
 import SignMessage from "./components/signMessage";
@@ -263,8 +264,7 @@ function App1() {
         <hr style={{ height: "1px", background: "white" }} />
         <CreateTextInscription network={network} capabilities={capabilities!} />
         <hr style={{ height: "1px", background: "white" }} />
-        <SendBitcoin
-          address={paymentAddress}
+        <CreateBinaryInscription
           network={network}
           capabilities={capabilities!}
         />
