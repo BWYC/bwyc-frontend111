@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
 
-import { Helmet } from 'react-helmet'
+import { Helmet } from "react-helmet";
 
-import Link from '../components/link'
-import './home.css'
+import Link from "../components/link";
+import "./home.css";
+import App1 from "../App";
 
 const Home = (props) => {
   return (
@@ -50,9 +51,6 @@ const Home = (props) => {
                 <span className="home-text03 nav-link">MEMBERS</span>
               </div>
             </a>
-            <button className="home-button start-button button">
-              <span className="home-text04">WHALE CONNECT</span>
-            </button>
           </div>
           <div data-thq="thq-burger-menu" className="home-burger-menu">
             <button className="home-button1 button">
@@ -143,292 +141,17 @@ const Home = (props) => {
           join the club. 
         </p>
       </header>
-      <div className="home-video">
-        <div className="home-container05">
-          <button className="home-button3 start-button button">
-            <span className="home-text09">ENTER WHALEVERSE</span>
-          </button>
-        </div>
-      </div>
-      <div className="home-featured">
-        <div className="home-header1">
-          <h2 className="home-title1 heading">HOLDER PRIVILLAGES</h2>
-          <div className="home-link3">
-            <div className="link">
-              <span className="home-caption">5+ Utilities</span>
-              <svg viewBox="0 0 1024 1024" className="home-icon10">
-                <path d="M298.667 341.333h323.669l-353.835 353.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l353.835-353.835v323.669c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-426.667c0-5.803-1.152-11.307-3.243-16.341s-5.163-9.728-9.216-13.781c-0.043-0.043-0.043-0.043-0.085-0.085-3.925-3.925-8.619-7.083-13.781-9.216-5.035-2.091-10.539-3.243-16.341-3.243h-426.667c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
-              </svg>
-            </div>
-          </div>
-        </div>
-        <div className="home-list">
-          <div className="home-work">
-            <img
-              alt="image"
-              src="/sgiutryioduopsi-1500w.png"
-              className="home-image5"
-            />
-            <div className="home-details">
-              <div className="home-header2">
-                <div className="home-heading">
-                  <span className="home-text10">STAKE BWYC</span>
-                  <Link rootClassName="link-root-class-name"></Link>
-                </div>
-                <span className="home-text11">
-                  <span className="home-text12">
-                    Each Whale has an equivalent value to the Utility Token.
-                    Staking #Whale NFT Locks them thus reducing tradable supply,
-                    while 
-                  </span>
-                  <br></br>
-                  <span>still rewarding the owner.</span>
-                  <br></br>
-                </span>
-              </div>
-              <div className="home-tags">
-                <div className="home-container06">
-                  <span className="home-tag tag">About Staking</span>
-                </div>
-                <div className="home-container07">
-                  <span className="home-tag1 tag">Strategy</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="home-work1">
-            <img alt="image" src="/wsrd-400w.png" className="home-image6" />
-            <div className="home-details01">
-              <div className="home-header3">
-                <div className="home-heading1">
-                  <span className="home-text16">Whalecard pass</span>
-                  <div className="link">
-                    <span className="home-caption1">Claim Whalecard!</span>
-                    <svg viewBox="0 0 1024 1024" className="home-icon12">
-                      <path d="M298.667 341.333h323.669l-353.835 353.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l353.835-353.835v323.669c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-426.667c0-5.803-1.152-11.307-3.243-16.341s-5.163-9.728-9.216-13.781c-0.043-0.043-0.043-0.043-0.085-0.085-3.925-3.925-8.619-7.083-13.781-9.216-5.035-2.091-10.539-3.243-16.341-3.243h-426.667c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
-                    </svg>
-                  </div>
-                </div>
-                <span className="home-text17">
-                  16 Locations across whaleverse, The pyramids, the Hot Burning
-                  Lava from the past, Blazing sands of Egypt and The Mutant
-                  City. Travel accros this mysterious locations and cross-chains
-                  to worlds unkown
-                </span>
-              </div>
-              <div className="home-tags1">
-                <div className="home-container08">
-                  <span className="home-tag2 tag">About Cards</span>
-                </div>
-                <div className="home-container09">
-                  <span className="home-tag3 tag">Strategy</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="home-work2">
-            <img
-              alt="image"
-              src="/z%20(109)-400w.png"
-              className="home-image7"
-            />
-            <div className="home-details02">
-              <div className="home-header4">
-                <div className="home-heading2">
-                  <span className="home-text18">Whale mutants</span>
-                  <Link rootClassName="link-root-class-name2"></Link>
-                </div>
-                <span className="home-text19">
-                  5000 Whale Mutants cross-chains to BNB CHAIN. They are all
-                  Epic, Unique and Helps Members navigate through the BNB
-                  Network and interact with whale utilities built on BNB
-                </span>
-              </div>
-              <div className="home-tags2">
-                <div className="home-container10">
-                  <span className="home-tag4 tag">About Mutants</span>
-                </div>
-                <div className="home-container11">
-                  <span className="home-tag5 tag">Strategy</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <App1 />
+
       <div className="home-about">
-        <div className="home-header5">
-          <h2 className="home-company2">10,000 WHALES</h2>
-          <span className="home-description1">
-            10,000 Collectibles will be minted by community members, Once
-            Launchpad completes a new world will be born. The Ocean. An Epic
-            World on Bitcoin Blockchain where Owners will be able to inscribe
-            ordinal numbers on their NFT that they own and trade on Bitcoin
-            Blockchain whilst increasing liquidity for whales token.
-          </span>
-        </div>
-        <div className="home-statistics">
-          <span className="home-text20">stats</span>
-          <div className="home-statistic-list">
-            <div className="home-statistic">
-              <span className="home-sta">MINTED WHALES</span>
-              <span className="home-sta01">4,501</span>
-            </div>
-            <div className="home-statistic1">
-              <span className="home-sta02">HOLDERS</span>
-              <span className="home-sta03">92</span>
-            </div>
-            <div className="home-statistic2">
-              <span className="home-sta04">TRANSFERS</span>
-              <span className="home-sta05">9,871</span>
-            </div>
-            <div className="home-statistic3">
-              <span className="home-sta06">CLAIMED CARDS</span>
-              <span className="home-sta07">804</span>
-            </div>
-            <div className="home-statistic4">
-              <span className="home-sta08">STAKED WHALES</span>
-              <span className="home-sta09">3,916</span>
-            </div>
-            <div className="home-statistic5">
-              <span className="home-sta10">$WHLS HOLDERS</span>
-              <span className="home-sta11">69</span>
-            </div>
-          </div>
-        </div>
-        <div className="home-container12">
-          <iframe
-            src="https://embed.ipfscdn.io/ipfs/bafybeihazpt6pkm4azgtupdz7hc2j3o4zpjsvtcgfq4t2keozxkss3ud6q/?contract=0x98E8B58c44e3c7f08171bb57aeD010fDF71B351E&amp;chain=%7B%22name%22%3A%22Core+Blockchain+Mainnet%22%2C%22chain%22%3A%22Core%22%2C%22rpc%22%3A%5B%22https%3A%2F%2Fcore-blockchain.rpc.thirdweb.com%2F%24%7BTHIRDWEB_API_KEY%7D%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22Core+Blockchain+Native+Token%22%2C%22symbol%22%3A%22CORE%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22core%22%2C%22chainId%22%3A1116%2C%22testnet%22%3Afalse%2C%22slug%22%3A%22core-blockchain%22%2C%22icon%22%3A%7B%22url%22%3A%22ipfs%3A%2F%2FQmeTQaBCkpbsxNNWTpoNrMsnwnAEf1wYTcn7CiiZGfUXD2%22%2C%22width%22%3A200%2C%22height%22%3A217%2C%22format%22%3A%22png%22%7D%7D&amp;clientId=678d5b0199cde588796872ea22804505&amp;theme=dark&amp;primaryColor=orange"
-            id="mint"
-            className="home-iframe"
-          ></iframe>
-        </div>
         <div className="home-client-list">
-          <div className="home-header6">
-            <h2 className="home-title2 heading">ROADMAP</h2>
-          </div>
-          <div className="home-row">
-            <span className="home-text21">2023 JULY</span>
-            <div className="home-list1">
-              <div className="home-item service">
-                <div className="home-details03">
-                  <span className="home-text22">Launchpad </span>
-                  <span className="home-text23">
-                    Community minting of 10000 whales on youngparrtot
-                  </span>
-                </div>
-                <svg viewBox="0 0 1024 1024" className="home-icon14">
-                  <path d="M298.667 341.333h323.669l-353.835 353.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l353.835-353.835v323.669c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-426.667c0-5.803-1.152-11.307-3.243-16.341s-5.163-9.728-9.216-13.781c-0.043-0.043-0.043-0.043-0.085-0.085-3.925-3.925-8.619-7.083-13.781-9.216-5.035-2.091-10.539-3.243-16.341-3.243h-426.667c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
-                </svg>
-              </div>
-              <div className="home-item1 service">
-                <div className="home-details04">
-                  <span className="home-text24">Chatroom</span>
-                  <span className="home-text25">Decentralized chatroom</span>
-                </div>
-                <svg viewBox="0 0 1024 1024" className="home-icon16">
-                  <path d="M298.667 341.333h323.669l-353.835 353.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l353.835-353.835v323.669c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-426.667c0-5.803-1.152-11.307-3.243-16.341s-5.163-9.728-9.216-13.781c-0.043-0.043-0.043-0.043-0.085-0.085-3.925-3.925-8.619-7.083-13.781-9.216-5.035-2.091-10.539-3.243-16.341-3.243h-426.667c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
-                </svg>
-              </div>
-              <div className="home-item2 service">
-                <div className="home-details05">
-                  <span className="home-text26">Discord Gate</span>
-                  <span className="home-text27">
-                    Only holders can access full discord server and utilities
-                  </span>
-                </div>
-                <svg viewBox="0 0 1024 1024" className="home-icon18">
-                  <path d="M298.667 341.333h323.669l-353.835 353.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l353.835-353.835v323.669c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-426.667c0-5.803-1.152-11.307-3.243-16.341s-5.163-9.728-9.216-13.781c-0.043-0.043-0.043-0.043-0.085-0.085-3.925-3.925-8.619-7.083-13.781-9.216-5.035-2.091-10.539-3.243-16.341-3.243h-426.667c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
-                </svg>
-              </div>
-              <div className="home-item3 service">
-                <div className="home-details06">
-                  <span className="home-text28">Staking Pool</span>
-                  <span className="home-text29">
-                    Community members can earn the utility token by staking
-                    their whale NFT.
-                  </span>
-                </div>
-                <svg viewBox="0 0 1024 1024" className="home-icon20">
-                  <path d="M298.667 341.333h323.669l-353.835 353.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l353.835-353.835v323.669c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-426.667c0-5.803-1.152-11.307-3.243-16.341s-5.163-9.728-9.216-13.781c-0.043-0.043-0.043-0.043-0.085-0.085-3.925-3.925-8.619-7.083-13.781-9.216-5.035-2.091-10.539-3.243-16.341-3.243h-426.667c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
-                </svg>
-              </div>
-            </div>
-          </div>
           <div className="home-row1">
             <span className="home-text30">2023 SEPTEMBER</span>
             <div className="home-list2">
-              <div className="home-item4 service">
-                <div className="home-details07">
-                  <span className="home-text31">CARD MARKETPLACE</span>
-                  <span className="home-text32">
-                    A card marketplace where holders can trade cards for profit
-                  </span>
-                </div>
-                <svg viewBox="0 0 1024 1024" className="home-icon22">
-                  <path d="M298.667 341.333h323.669l-353.835 353.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l353.835-353.835v323.669c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-426.667c0-5.803-1.152-11.307-3.243-16.341s-5.163-9.728-9.216-13.781c-0.043-0.043-0.043-0.043-0.085-0.085-3.925-3.925-8.619-7.083-13.781-9.216-5.035-2.091-10.539-3.243-16.341-3.243h-426.667c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
-                </svg>
-              </div>
-              <div className="home-item5 service">
-                <div className="home-details08">
-                  <span className="home-text33">CROSS-CHAINS</span>
-                  <span className="home-text34">
-                    5000 Whales will cross-chains to BNB chain, Holders on CORE
-                    will be airdropped with burnable ERC115 token before
-                    crossing chains. 
-                  </span>
-                </div>
-                <svg viewBox="0 0 1024 1024" className="home-icon24">
-                  <path d="M298.667 341.333h323.669l-353.835 353.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l353.835-353.835v323.669c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-426.667c0-5.803-1.152-11.307-3.243-16.341s-5.163-9.728-9.216-13.781c-0.043-0.043-0.043-0.043-0.085-0.085-3.925-3.925-8.619-7.083-13.781-9.216-5.035-2.091-10.539-3.243-16.341-3.243h-426.667c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
-                </svg>
-              </div>
               <div className="home-item6 service">
                 <div className="home-details09">
                   <span className="home-text35">Ordinals</span>
-                  <span className="home-text36">
-                    BWYC will also cross chains to Bitcoin and allow Holders to
-                    Inscribe Ordinals Numbers to metadata of EVM NFT. Like
-                    storing the same unique asset on different chains. How
-                    Awesome is that?
-                  </span>
                 </div>
-                <svg viewBox="0 0 1024 1024" className="home-icon26">
-                  <path d="M298.667 341.333h323.669l-353.835 353.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l353.835-353.835v323.669c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-426.667c0-5.803-1.152-11.307-3.243-16.341s-5.163-9.728-9.216-13.781c-0.043-0.043-0.043-0.043-0.085-0.085-3.925-3.925-8.619-7.083-13.781-9.216-5.035-2.091-10.539-3.243-16.341-3.243h-426.667c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div className="home-row2">
-            <span className="home-text37">2023 OCTOBER</span>
-            <div className="home-list3">
-              <div className="home-item7 service">
-                <div className="home-details10">
-                  <span className="home-text38">DAO GOVERNANCE</span>
-                  <span className="home-text39">
-                    Members will be able to make proposals on the BWYC DAO By
-                    delegating the utility token
-                  </span>
-                </div>
-                <svg viewBox="0 0 1024 1024" className="home-icon28">
-                  <path d="M298.667 341.333h323.669l-353.835 353.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l353.835-353.835v323.669c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-426.667c0-5.803-1.152-11.307-3.243-16.341s-5.163-9.728-9.216-13.781c-0.043-0.043-0.043-0.043-0.085-0.085-3.925-3.925-8.619-7.083-13.781-9.216-5.035-2.091-10.539-3.243-16.341-3.243h-426.667c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
-                </svg>
-              </div>
-              <div className="home-item8 service">
-                <div className="home-details11">
-                  <span className="home-text40">
-                    <span>BLOCKCAIN</span>
-                    <br></br>
-                    <span>GAMING</span>
-                    <br></br>
-                  </span>
-                  <span className="home-text45">
-                    BWYC Devs are building EPIC Games for the project some will
-                    include limited play to earn the Utility Token
-                  </span>
-                </div>
-                <svg viewBox="0 0 1024 1024" className="home-icon30">
-                  <path d="M298.667 341.333h323.669l-353.835 353.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l353.835-353.835v323.669c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-426.667c0-5.803-1.152-11.307-3.243-16.341s-5.163-9.728-9.216-13.781c-0.043-0.043-0.043-0.043-0.085-0.085-3.925-3.925-8.619-7.083-13.781-9.216-5.035-2.091-10.539-3.243-16.341-3.243h-426.667c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
-                </svg>
               </div>
             </div>
           </div>
@@ -479,7 +202,7 @@ const Home = (props) => {
         />
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
