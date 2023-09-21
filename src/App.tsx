@@ -139,7 +139,7 @@ function App1() {
     return (
       <div style={{ padding: 30 }}>
         <h1 style={{ color: "white" }}>
-          BWYC CrossChain - <h3 style={{ color: "orange" }}>{network}</h3>
+          ₿WYC CrossChain - <h3 style={{ color: "orange" }}>{network}</h3>
         </h1>
         <div style={{ color: "white" }}>
           Please connect your wallet to continue
@@ -147,7 +147,8 @@ function App1() {
 
         <div
           style={{
-            background: "#344",
+            background: "black",
+            color: "whitesmoke",
             padding: 30,
             marginTop: 10,
             borderRadius: "26px",
@@ -162,6 +163,7 @@ function App1() {
               width: 180,
               border: "solid",
               borderRadius: "8px",
+              color: "wheat",
             }}
             onClick={toggleNetwork}
           >
@@ -175,6 +177,7 @@ function App1() {
               width: 180,
               border: "solid",
               borderRadius: "8px",
+              color: "wheat",
             }}
             onClick={onConnectClick}
           >
@@ -191,63 +194,94 @@ function App1() {
         style={{
           color: "white",
           marginBottom: "5%",
-          marginLeft: "20%",
+          marginLeft: "25%",
           fontFamily: "courier",
         }}
       >
-        BWYC CrossChain - {network}
+        ₿WYC CrossChain - <p style={{ color: "lightgreen" }}>{network}</p>
       </h3>
       <div style={{ width: "auto" }}>
         <div
           style={{
             color: "white",
             fontFamily: "PT Mono",
-            width: "auto",
-            marginLeft: "20%",
+            width: "60%",
+            marginLeft: "25%",
           }}
         >
-          Payment Address: <p style={{ color: "orange" }}> {paymentAddress}</p>
+          Payment Address:{" "}
+          <p
+            style={{
+              color: "aqua",
+              fontFamily: "PT Mono",
+              width: "60%",
+              marginLeft: "10%",
+              height: "100%",
+              overflow: "scroll",
+            }}
+          >
+            {" "}
+            {paymentAddress}
+          </p>
         </div>
         <hr></hr>
         <div
-          style={{ color: "white", fontFamily: "PT Mono", marginLeft: "20%" }}
+          style={{
+            color: "white",
+            fontFamily: "PT Mono",
+            marginLeft: "25%",
+            height: "100%",
+          }}
         >
           Ordinals Address:
-          <p style={{ color: "orange" }}> {ordinalsAddress}</p>
+          <p
+            style={{
+              color: "aqua",
+              fontFamily: "PT Mono",
+              width: "60%",
+              marginLeft: "5%",
+              height: "100%",
+              overflow: "scroll",
+            }}
+          >
+            {" "}
+            {ordinalsAddress}
+          </p>
         </div>
         <br />
 
-        <div style={{ marginLeft: "30%" }}>
-          <h3 style={{ color: "white" }}>Disconnect wallet</h3>
-          <button
-            style={{
-              height: 40,
-              width: 180,
-              border: "solid",
-              padding: "2%",
-              borderRadius: "8px",
-              color: "white",
-            }}
-            onClick={onWalletDisconnect}
-          >
-            Disconnect
-          </button>
-        </div>
-        <hr />
+        <hr style={{ height: "1px", background: "white" }} />
         <CreateTextInscription network={network} capabilities={capabilities!} />
-        <hr />
+        <hr style={{ height: "1px", background: "white" }} />
         <SendBitcoin
           address={paymentAddress}
           network={network}
           capabilities={capabilities!}
         />
-        <hr />
+        <hr style={{ height: "1px", background: "white" }} />
         <SignMessage
           address={ordinalsAddress}
           network={network}
           capabilities={capabilities!}
         />
-        <hr />
+        <hr style={{ height: "1px", background: "white" }} />
+      </div>
+      <div style={{ marginLeft: "30%" }}>
+        <h3 style={{ color: "white" }}>Disconnect wallet</h3>
+        <button
+          style={{
+            height: 40,
+            width: 180,
+            border: "solid",
+            paddingBottom: "1%",
+            borderRadius: "8px",
+            color: "white",
+            background: "red",
+          }}
+          onClick={onWalletDisconnect}
+        >
+          Disconnect
+        </button>
       </div>
     </div>
   );

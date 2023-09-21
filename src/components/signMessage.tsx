@@ -41,7 +41,16 @@ const SignMessage = ({ network, address, capabilities }: Props) => {
   const signingDisabled = message.length === 0;
 
   return (
-    <div className="container">
+    <div
+      style={{
+        padding: "40px",
+        color: "white",
+        display: "flex",
+        flexDirection: "column",
+        alignContent: "center",
+        marginLeft: "20%",
+      }}
+    >
       <h3>Sign message</h3>
       <p>
         <b>Address</b>
@@ -51,6 +60,15 @@ const SignMessage = ({ network, address, capabilities }: Props) => {
       <b>Message</b>
       <br />
       <input
+        style={{
+          background: "transparent",
+          padding: "10px",
+          border: "solid",
+          color: "white",
+          borderRadius: "8px",
+          margin: "10px",
+          width: "50%",
+        }}
         type="text"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
@@ -58,7 +76,18 @@ const SignMessage = ({ network, address, capabilities }: Props) => {
       <br />
       <br />
       <div>
-        <button onClick={onSignMessageClick} disabled={signingDisabled}>
+        <button
+          style={{
+            background: "black",
+            padding: "10px",
+            border: "solid",
+            color: "white",
+            borderRadius: "8px",
+            margin: "10px",
+          }}
+          onClick={onSignMessageClick}
+          disabled={signingDisabled}
+        >
           Sign message
         </button>
       </div>

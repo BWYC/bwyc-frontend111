@@ -71,7 +71,15 @@ const CreateTextInscription = ({ network, capabilities }: Props) => {
 
   if (network !== BitcoinNetworkType.Mainnet) {
     return (
-      <div className="container">
+      <div
+        style={{
+          padding: "40px",
+          color: "white",
+          display: "flex",
+          flexDirection: "column",
+          alignContent: "center",
+        }}
+      >
         <h3>Create text inscription</h3>
         <b>This is only available in Mainnet</b>
       </div>
@@ -80,7 +88,7 @@ const CreateTextInscription = ({ network, capabilities }: Props) => {
 
   if (!capabilities.has("createInscription")) {
     return (
-      <div className="container">
+      <div>
         <h3>Create file inscription</h3>
         <b>The wallet does not support this feature</b>
       </div>
@@ -88,37 +96,112 @@ const CreateTextInscription = ({ network, capabilities }: Props) => {
   }
 
   return (
-    <div className="container">
-      <h3>Create text inscription</h3>
-      <p>
+    <div
+      style={{
+        padding: "40px",
+        color: "white",
+        display: "flex",
+        flexDirection: "column",
+        alignContent: "center",
+        marginLeft: "20%",
+      }}
+    >
+      <h3
+        style={{
+          padding: "10px",
+          color: "white",
+        }}
+      >
+        Create Text inscription
+      </h3>
+      <p
+        style={{
+          padding: "10px",
+          color: "white",
+          width: "50%",
+        }}
+      >
         Creates an inscription with the desired text and content type. The
         inscription will be sent to your ordinals address.
       </p>
-      <p>
-        A service fee and service fee address can be added to the inscription
-        request as part of the payload if desired.
+      <p
+        style={{
+          padding: "10px",
+          color: "white",
+          width: "50%",
+        }}
+      >
+        Service FEE: 0.0 ₿TC
       </p>
       <div>
         <p>
-          <b>Content type</b>
+          <b
+            style={{
+              padding: "10px",
+              color: "white",
+              width: "50%",
+            }}
+          >
+            Content type
+          </b>
           <br />
           <input
+            style={{
+              background: "transparent",
+              padding: "10px",
+              border: "solid",
+              color: "white",
+              borderRadius: "8px",
+              margin: "10px",
+            }}
             value={contentType}
             onChange={(e) => setContentType(e.target.value)}
           />
         </p>
         <p>
-          <b>Content</b>
+          <b
+            style={{
+              padding: "10px",
+              color: "white",
+              width: "50%",
+            }}
+          >
+            Content
+          </b>
           <br />
           <textarea
+            style={{
+              background: "transparent",
+              padding: "10px",
+              border: "solid",
+              color: "white",
+              borderRadius: "8px",
+              margin: "10px",
+            }}
             value={content}
             onChange={(e) => setContent(e.target.value)}
           />
         </p>
         <p>
-          <b>Fee rate</b>
+          <b
+            style={{
+              padding: "10px",
+              color: "white",
+              width: "50%",
+            }}
+          >
+            Fee rate
+          </b>
           <br />
           <input
+            style={{
+              background: "transparent",
+              padding: "10px",
+              border: "solid",
+              color: "white",
+              borderRadius: "8px",
+              margin: "10px",
+            }}
             value={suggestedMinerFeeRate}
             onChange={(e) => {
               const newFeeRate = Number(e.target.value);
@@ -128,7 +211,19 @@ const CreateTextInscription = ({ network, capabilities }: Props) => {
             }}
           />
         </p>
-        <button onClick={onCreateClick}>Create inscription</button>
+        <button
+          style={{
+            background: "black",
+            padding: "10px",
+            border: "solid",
+            color: "white",
+            borderRadius: "8px",
+            margin: "10px",
+          }}
+          onClick={onCreateClick}
+        >
+          Create inscription
+        </button>
       </div>
     </div>
   );

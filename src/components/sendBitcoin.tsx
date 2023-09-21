@@ -36,7 +36,16 @@ const SendBitcoin = ({ network, address, capabilities }: Props) => {
 
   if (network !== BitcoinNetworkType.Testnet)
     return (
-      <div className="container">
+      <div
+        style={{
+          padding: "40px",
+          color: "white",
+          display: "flex",
+          flexDirection: "column",
+          alignContent: "center",
+          marginLeft: "20%",
+        }}
+      >
         <h3>Send Bitcoin</h3>
         <div>Only available on testnet</div>
       </div>
