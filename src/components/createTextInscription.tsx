@@ -133,6 +133,7 @@ const CreateTextInscription = ({ network, capabilities }: Props) => {
           </b>
           <br />
           <input
+            disabled
             style={{
               background: "transparent",
               padding: "10px",
@@ -167,7 +168,7 @@ const CreateTextInscription = ({ network, capabilities }: Props) => {
               width: "300px",
               height: "200px",
             }}
-            value={content}
+            placeholder={content}
             onChange={(e) => setContent(e.target.value)}
           />
         </p>
