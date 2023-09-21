@@ -10,10 +10,10 @@
     "declaration": true,
     "sourceMap": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": false,
-    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
     "useUnknownInCatchVariables": false,
-    "noImplicitAny": false,
+    "noImplicitAny": true,
     "allowUnreachableCode": false,
     "skipLibCheck": true
   }

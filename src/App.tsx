@@ -9,6 +9,10 @@ import {
 import { useLocalStorage } from "./useLocalStorage";
 
 import { useEffect, useState } from "react";
+import CreateTextInscription from "./components/createTextInscription";
+
+import SendBitcoin from "./components/sendBitcoin";
+import SignMessage from "./components/signMessage";
 
 function App1() {
   const [paymentAddress, setPaymentAddress] = useLocalStorage("paymentAddress");
@@ -229,6 +233,21 @@ function App1() {
             Disconnect
           </button>
         </div>
+        <hr />
+        <CreateTextInscription network={network} capabilities={capabilities!} />
+        <hr />
+        <SendBitcoin
+          address={paymentAddress}
+          network={network}
+          capabilities={capabilities!}
+        />
+        <hr />
+        <SignMessage
+          address={ordinalsAddress}
+          network={network}
+          capabilities={capabilities!}
+        />
+        <hr />
       </div>
     </div>
   );

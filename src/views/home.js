@@ -142,7 +142,7 @@ const Home = (props) => {
         </p>
       </header>
       <App1 />
-
+      <hr />
       <div className="home-about">
         <div className="home-client-list">
           <div className="home-row1">
