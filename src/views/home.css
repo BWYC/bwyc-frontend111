@@ -17,7 +17,7 @@
   z-index: 100;
   align-items: center;
   flex-direction: column;
-  background-color: #000000;
+  background-color: #0000000e;
 }
 .home-navbar-interactive {
   width: 1151px;
@@ -34,7 +34,7 @@
   padding-right: var(--dl-space-space-oneandhalfunits);
   backdrop-filter: blur(10px);
   justify-content: space-between;
-  background-color: rgb(6, 6, 6);
+  background-color: rgba(6, 6, 6, 0.684);
   border-top-width: 0px;
   border-left-width: 0px;
   border-right-width: 0px;
