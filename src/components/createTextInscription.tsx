@@ -104,7 +104,7 @@ const CreateTextInscription = ({ network, capabilities }: Props) => {
         style={{
           padding: "10px",
           color: "white",
-          width: "50%",
+          width: "100%",
           fontFamily: "monospace",
         }}
       >
