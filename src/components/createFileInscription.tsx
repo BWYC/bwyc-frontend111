@@ -59,8 +59,19 @@ const CreateBinaryInscription = ({ network, capabilities }: Props) => {
   if (network !== BitcoinNetworkType.Mainnet) {
     return (
       <div className="container">
-        <h3>Create file inscription</h3>
-        <b>This is only available in Mainnet</b>
+        <h3
+          style={{
+            padding: "40px",
+            color: "grey",
+            display: "flex",
+            flexDirection: "column",
+            alignContent: "center",
+            fontFamily: "monospace",
+          }}
+        >
+          Create file inscription
+          <b>This is only available in Mainnet</b>
+        </h3>
       </div>
     );
   }
