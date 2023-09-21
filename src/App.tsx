@@ -268,6 +268,7 @@ function App1() {
       </div>
       <div style={{ marginLeft: "30%" }}>
         <h3 style={{ color: "white" }}>Disconnect wallet</h3>
+        <hr />
         <button
           style={{
             height: 40,
@@ -276,7 +277,7 @@ function App1() {
             paddingBottom: "1%",
             borderRadius: "8px",
             color: "white",
-            background: "red",
+            background: "skyblue",
           }}
           onClick={onWalletDisconnect}
         >

@@ -135,13 +135,47 @@ const Home = (props) => {
       <div className="home-about">
         <div className="home-client-list">
           <div className="home-row1">
-            <span className="home-text30">2023 SEPTEMBER</span>
+            <span className="home-text30">SUPPORTED WALLETS</span>
+
             <div className="home-list2">
-              <div className="home-item6 service">
-                <div className="home-details09">
-                  <span className="home-text35">Ordinals</span>
-                </div>
-              </div>
+              <a href="https://www.xverse.app/download">
+                <img
+                  src="https://play-lh.googleusercontent.com/UiUoRVY5QVI5DAZyP5s6xanuPRrd8HNbKGpjKt3HVPVuT6VJcnXVqR7V4ICQ9rYRCg"
+                  alt="xverse"
+                  height={50}
+                  style={{
+                    border: "solid",
+                    color: "white",
+                    borderWidth: "1px",
+                    borderRadius: "32px",
+                  }}
+                />
+
+                <hr />
+                <span className="home-text35" style={{ fontFamily: "courier" }}>
+                  Xverse Wallet
+                </span>
+              </a>
+              <hr />
+              <a href="https://leather.io/">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROY1uzrlM6vMg6NvLvhUEvPhaKfWnWIOc3WE7Oru40Ih5uUAlMPVVhdg2_SKXlPkTA-S0&usqp=CAU"
+                  alt="xverse"
+                  height={50}
+                  style={{
+                    border: "solid",
+                    color: "white",
+                    borderWidth: "1px",
+                    borderRadius: "32px",
+                  }}
+                />
+
+                <hr />
+                <span className="home-text35" style={{ fontFamily: "courier" }}>
+                  Leather Wallet
+                </span>
+              </a>
+              <div className="home-item6 service"></div>
             </div>
           </div>
         </div>
