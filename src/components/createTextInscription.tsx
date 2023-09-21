@@ -88,7 +88,7 @@ const CreateTextInscription = ({ network, capabilities }: Props) => {
         display: "flex",
         flexDirection: "column",
         alignContent: "center",
-        marginLeft: "20%",
+        marginLeft: "2%",
         fontFamily: "monospace",
       }}
     >
@@ -165,7 +165,7 @@ const CreateTextInscription = ({ network, capabilities }: Props) => {
               color: "gray",
               borderRadius: "8px",
               margin: "10px",
-              width: "300px",
+              width: "250px",
               height: "200px",
             }}
             placeholder={content}

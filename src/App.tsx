@@ -190,26 +190,32 @@ function App1() {
 
   return (
     <div style={{ padding: 30 }}>
-      <h3
+      <h2
         style={{
           color: "white",
           marginBottom: "5%",
-          marginLeft: "25%",
+          marginLeft: "10%",
           fontFamily: "courier",
         }}
       >
         ₿WYC CrossChain - <p style={{ color: "lightgreen" }}>{network}</p>
-      </h3>
+      </h2>
       <div style={{ width: "auto" }}>
         <div
           style={{
             color: "white",
             fontFamily: "PT Mono",
-            width: "60%",
-            marginLeft: "25%",
+            marginLeft: "10%",
+            height: "140px",
+            border: "solid",
+            overflowWrap: "break-word",
+            padding: "10px",
+            borderRadius: "10px",
+            width: "280px",
           }}
         >
-          Payment Address:{" "}
+          Payment Address: {""}
+          <hr />
           <p
             style={{
               color: "aqua",
@@ -217,7 +223,6 @@ function App1() {
               width: "60%",
               marginLeft: "10%",
               height: "100%",
-              overflow: "scroll",
             }}
           >
             {" "}
@@ -229,11 +234,17 @@ function App1() {
           style={{
             color: "white",
             fontFamily: "PT Mono",
-            marginLeft: "25%",
-            height: "100%",
+            marginLeft: "10%",
+            height: "160px",
+            border: "solid",
+            overflowWrap: "break-word",
+            padding: "10px",
+            borderRadius: "10px",
+            width: "280px",
           }}
         >
           Ordinals Address:
+          <hr />
           <p
             style={{
               color: "aqua",
@@ -241,7 +252,6 @@ function App1() {
               width: "60%",
               marginLeft: "5%",
               height: "100%",
-              overflow: "scroll",
             }}
           >
             {" "}

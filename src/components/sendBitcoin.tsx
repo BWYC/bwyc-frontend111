@@ -72,23 +72,52 @@ const SendBitcoin = ({ network, address, capabilities }: Props) => {
         {address}
       </p>
       <p>
-        <b>Recipient address</b>
+        <b style={{ color: "white" }}>Recipient address</b>
+        <hr />
         <br />
         <input
           value={recipient}
           onChange={(e) => setRecipient(e.target.value)}
+          style={{
+            borderRadius: "8px",
+            background: "transparent",
+            border: "solid",
+            color: "white",
+            padding: "10px",
+          }}
         />
       </p>
+
       <p>
-        <b>Send amount</b>
+        <hr />
+        <b style={{ color: "white" }}> Send amount</b>
+        <hr />
         <br />
         <input
+          style={{
+            borderRadius: "8px",
+            background: "transparent",
+            border: "solid",
+            color: "white",
+            padding: "10px",
+          }}
           type="number"
           value={amount.toString()}
           onChange={(e) => setAmount(BigInt(e.target.value))}
         />
       </p>
-      <button onClick={onSendBtcClick} disabled={sendDisabled}>
+      <button
+        style={{
+          borderRadius: "8px",
+          margin: "5%",
+          background: "orange",
+          border: "solid",
+          color: "white",
+          padding: "10px",
+        }}
+        onClick={onSendBtcClick}
+        disabled={sendDisabled}
+      >
         Send BTC Transaction
       </button>
     </div>

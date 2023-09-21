@@ -31,7 +31,20 @@ const SignMessage = ({ network, address, capabilities }: Props) => {
 
   if (!capabilities.has("signMessage")) {
     return (
-      <div className="container">
+      <div
+        style={{
+          color: "white",
+          fontFamily: "PT Mono",
+          marginLeft: "20%",
+          height: "140px",
+          border: "solid",
+          overflowWrap: "break-word",
+          padding: "10px",
+          borderRadius: "10px",
+          width: "330px",
+        }}
+      >
+        <hr />
         <h3>Sign message</h3>
         <b>The wallet does not support this feature</b>
       </div>
@@ -43,24 +56,31 @@ const SignMessage = ({ network, address, capabilities }: Props) => {
   return (
     <div
       style={{
-        padding: "40px",
         color: "white",
-        display: "flex",
-        flexDirection: "column",
-        alignContent: "center",
-        marginLeft: "20%",
-        fontFamily: "monospace",
-        gap: "10px",
+        fontFamily: "PT Mono",
+        marginLeft: "10%",
+        height: "140px",
+        border: "solid",
+        overflowWrap: "break-word",
+        padding: "10px",
+        borderRadius: "10px",
+        width: "250px",
+        marginBottom: "50%",
+        marginTop: "10%",
       }}
     >
       <h3>Sign message</h3>
-      <p style={{ color: "orange", overflow: "scroll" }}>
+      <p style={{ color: "orange" }}>
         <b>Address</b>
         <br />
         {address}
       </p>
-      <b>Message</b>
+
       <br />
+      <hr />
+      <hr />
+      <hr />
+      <b>Message</b>
       <input
         style={{
           background: "transparent",
@@ -72,7 +92,7 @@ const SignMessage = ({ network, address, capabilities }: Props) => {
           width: "50%",
         }}
         type="text"
-        value={message}
+        placeholder={message}
         onChange={(e) => setMessage(e.target.value)}
       />
       <br />
